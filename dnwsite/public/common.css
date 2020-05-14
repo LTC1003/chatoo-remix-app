@@ -1,8 +1,10 @@
-html{
-  font-size: 12px;
+html {
+  font-size: 20px;
 }
 body{
- box-sizing: border-box; 
+ box-sizing: border-box;
+ font-family:Microsoft YaHei;
+  /* margin: 0; */
 }
 div,table,form,button,input,section,ul,ol,li{
   margin: 0;
@@ -10,65 +12,43 @@ div,table,form,button,input,section,ul,ol,li{
   list-style: none;
 }
 a{
-  list-style: none;
+  text-decoration: none;
+  color: #666666;
 }
 img{
   vertical-align: middle;
 }
-
+/* deve-style */
 .container{
   width: 100%;
   /* border: 1px solid #333; */
 }
 .header{
-  height: 80px;
+  height: 4rem;
+  /* height: 80px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid #333;
 
 }
 .applog{
-  width: 160px;
-  height: 44px;
+  /* width: 160px; */
+  width: 8rem;
+  /* height: 44px; */
+  height: 2.2rem;
   background: url("../public/imgs/applog.png") no-repeat;
   background-size: contain;
 }
-/* .applog img{
-  width: 100%;
-} */
 .pagelist{
   display: flex;
-  width: 340px;
+  /* width: 340px; */
+  width: 17em;
   justify-content: space-around;
   font-size:16px;
-  font-family:Microsoft YaHei;
+}
+.pagelist li>a {
   font-weight:bold;
-  color: #666666;
 }
-.content-warp{
-  width: 100%;
-  min-height: 800px;
-  background: url("../public/imgs/sitebg.png")no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.pagelist li>a:hover {
+  cursor: pointer;
 }
-.warp-area{
-  border: 1px solid #333333;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-/* .warp-area>div{
-  flex: 1;
-} */
-.warp-area .downbox{
-  flex: 1;
-}
-.phoneImg{
-  /* width: 436px;
-  height: 621px; */
-}
-
