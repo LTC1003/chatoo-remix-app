@@ -81,7 +81,7 @@ img{
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: -999;
+  z-index: 0;
 }
 .bglogo{
   width: 14rem;
