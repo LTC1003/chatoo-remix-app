@@ -46,12 +46,20 @@ img{
   width: 17em;
   justify-content: space-around;
   font-size: 0.8rem;
+  line-height: 2rem;
+}
+.active {
+  border-bottom: 2px solid #ff8903;
+}
+.active a{
+  color: #ff8903;
 }
 .pagelist li>a {
   font-weight:bold;
 }
 .pagelist li>a:hover {
   cursor: pointer;
+  color: #ff8903;
 }
 
 .footer{
