@@ -4,9 +4,10 @@ html {
 body{
  box-sizing: border-box;
  font-family:Microsoft YaHei;
-  /* margin: 0; */
+  margin: 0;
+  padding: 0;
 }
-div,table,form,button,input,section,ul,ol,li{
+div,table,form,button,input,section,ul,ol,li,p,span{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -44,11 +45,44 @@ img{
   /* width: 340px; */
   width: 17em;
   justify-content: space-around;
-  font-size:16px;
+  font-size: 0.8rem;
 }
 .pagelist li>a {
   font-weight:bold;
 }
 .pagelist li>a:hover {
   cursor: pointer;
+}
+
+.footer{
+  color: #999999;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  padding: 2rem 0;
+  border-top: 2px solid #e1e1e1;
+}
+
+.content-warp{
+  width: 100%;
+  /* min-height: 800px; */
+  min-height: 35rem;
+  background: url("../public/imgs/sitebg.png")no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -999;
+}
+.bglogo{
+  width: 14rem;
+  height: 14rem;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem; 
+  z-index: -100;
+}
+.bglogo>img{
+  width: 100%;
 }

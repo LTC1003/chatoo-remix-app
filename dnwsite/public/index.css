@@ -1,13 +1,4 @@
-.content-warp{
-  width: 100%;
-  /* min-height: 800px; */
-  min-height: 40rem;
-  background: url("../public/imgs/sitebg.png")no-repeat;
-  background-size: 100% 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .warp-area{
   display: flex;
   justify-content: space-between;
@@ -72,8 +63,11 @@
   border: 2px solid #ffffff;
   border-radius: 20px;
   font-size: 0.9rem;
+  color: #f5f5f5;
 }
-
+.btn-andr:hover, .btn-ios:hover{
+  background-color: #ff9606;
+}
 .phoneImg{
   width: 50%;
   display: flex;
@@ -88,7 +82,7 @@
 /* 13 寸 */
 @media screen and (max-width: 1200px){
   html{
-    font-size: 19px;
+    font-size: 20px;
   }
   .warp-area{
     width: 60%;
@@ -97,7 +91,7 @@
 /* ipad pro */
 @media screen and (max-width: 1024px){
   html{
-    font-size: 18px;
+    font-size: 20px;
   }
   .content-warp{
     background: url("../public/imgs/devbg-phone.png") no-repeat;
@@ -117,11 +111,9 @@
 /* ipad */
 @media screen and (max-width: 768px){
   html{
-    font-size: 17px;
+    font-size: 18px;
   }
   .content-warp{
-    background: url("../public/imgs/devbg-phone.png") no-repeat;
-    background-size: 100% 100%;
     min-height: 1024px;
   }
 }
@@ -140,6 +132,9 @@
   .downbox, .phoneImg{
     width: 80%;
   }
+  .footer>p{
+    padding: 2px 10px;
+  }
 }
 /* dev-min-width 320px */
 @media screen and (max-width: 320px){
@@ -148,7 +143,6 @@
   }
   .content-warp{
     background-size: cover;
-    min-height: 568px;
   }
   .content-warp{
     align-items: flex-start;
