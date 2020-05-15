@@ -117,7 +117,7 @@
 /* dev-min-width 320px */
 @media screen and (max-width: 320px){
   html{
-    font-size: 14px !important;
+    font-size: 14px;
   }
   .content-warp{
     background-size: cover;
