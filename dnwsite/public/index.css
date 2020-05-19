@@ -118,6 +118,12 @@
   .content-warp{
     min-height: 1024px;
   }
+
+  .footer{
+    font-size: 12px;
+    padding: 2px 10px;
+  }
+
 }
 /* phone-width-max: 414px */
 @media screen and (max-width: 500px){
@@ -137,9 +143,7 @@
   .phoneImg{
     width: 60%;
   }
-  .footer>p{
-    padding: 2px 10px;
-  }
+
 }
 /* dev-min-width 320px */
 @media screen and (max-width: 320px){
