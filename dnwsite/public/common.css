@@ -84,7 +84,8 @@ img{
   width: 100%;
   /* min-height: 800px; */
   min-height: 35rem;
-  background: url("../public/imgs/sitebg.png")no-repeat;
+  /* background: url("../public/imgs/sitebg.png")no-repeat; */
+  background: url("../public/imgs/webpagebg.png")no-repeat;
   background-size: 100% 100%;
   display: flex;
   justify-content: center;

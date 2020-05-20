@@ -30,18 +30,24 @@
       </div>
       <div class="warp-area">
         <div class="downbox">
-          <div class="title">视生活APP</div>
-          <div class="title-docs">带你看生活，带你看世界</div>
+          <div class="app-avater">
+            <img src="./public/imgs/appAvatar.png" alt="">
+          </div>
+          <div class="title">视生活&nbsp;APP</div>
+          <div class="title-docs">看世界&nbsp;享生活</div>
+          <button class="devifdown" id="devifdown" onclick="querySystem()">
+            体验下载
+          </button>
           <div class="rwcode">
             <div class="code">
               <div class="code-ios">
                 <img src="./public/imgs/wxcode-ios.png" alt="ios">
               </div>
               <div class="code-text">
-                <div class="icon icon-ios">
+                <!-- <div class="icon icon-ios">
                   <img src="./public/imgs/iconIos.png" alt="">
-                </div>
-                <span>ios</span>扫描下载
+                </div> -->
+                <!-- <span>ios</span>扫描下载 -->
               </div>
               <a class="btn-ios" href="https://apps.apple.com/cn/app/%E8%A7%86%E7%94%9F%E6%B4%BB/id1435426090">
                 <img src="./public/imgs/iconIos.png" alt="">
@@ -53,10 +59,10 @@
                 <img src="./public/imgs/wxcode-andr.png" alt="android">
               </div>
               <div class="code-text">
-                <div class="icon icon-andr">
+                <!-- <div class="icon icon-andr">
                   <img src="./public/imgs/iconAndr.png" alt="">
-                </div>
-                <span>Android</span>扫描下载
+                </div> -->
+                <!-- <span>Android</span>扫描下载 -->
               </div>
               <a class="btn-andr" href="http://d.7short.com/5wck">
               <!-- <div class="btn-andr"> -->
@@ -72,22 +78,44 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="item-col"><p>主办单位: 江苏精易达信息技术股份有限公司</p><p>客服热线： 025-85565201</p></div>
+    <footer class="footer">                       
+      <div class="item-col"><p>主办单位: 江苏精易达信息技术股份有限公司</p><!-- <p>客服热线： 025-85565201</p> --></div>
       <div class="item-col">
         <p>江苏精易达信息技术 版权所有</p>
-        <p><a href="./imgs/siteimgs/wlwh.jpg" target="_blank">苏网文（2017）5573-119号</a>|</p> 
-        <p><a href="./imgs/siteimgs/zzyw1.jpg" target="_blank">增值电信业务经营许可证 B2-20180782</a> </p> 
-        <p><a href="./imgs/siteimgs/zzyw2.jpg" target="_blank">苏B2-20170478</a> </p>
+        <p><a href="./imgs/siteimgs/wlwh.jpg" target="_blank">苏ICP备17004241号-3苏网文（2017）5573-119号</a></p> 
+        <p><a href="./imgs/siteimgs/zzyw1.jpg" target="_blank">增值业务许可证：B2-20180782 苏B2-20170478</a> </p> 
+        <!-- <p><a href="./imgs/siteimgs/zzyw2.jpg" target="_blank">苏B2-20170478</a> </p> -->
       </div>
       <div class="item-col">
-        <p><a href="http://www.beian.miit.gov.cn" target="_blank">苏ICP备17004241号-3</a> |</p>
-        <p><a href="http://dnwonline.jyddnw.com/licence/gbz.jpg" target="_blank">广播电视节目制作经营许可证</a> |</p>
+        <p><a href="http://www.beian.miit.gov.cn" target="_blank">苏ICP备17004241号-3</a> </p>
+        <p><a href="http://dnwonline.jyddnw.com/licence/gbz.jpg" target="_blank">广播电视节目制作经营许可证</a> </p>
         <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32010502010320" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://www.jyddnw.com/imgs/siteimgs/gaba.png" style="float:left;"/> 苏公网安备 32010502010320号</a></p> 
       </div>
       <div class="item-col">公安部网络违法犯罪举报网站 <p>举报热线：12318</p> <p>举报邮箱：service@qiaozhifu.com</p></div>
       <div class="item-col"><p>Copyright © 江苏精易达信息技术</p> <p>All Rights Reserved</p></div>
     </footer>
   </div>
+  <script>
+    function querySystem(){
+      var device_type = navigator.userAgent;
+      // var device_version = navigator.appVersion ;
+      // var platform = navigator.platform;
+      console.log(1111111111111, device_type);
+      //正则表达式
+      var strIos = /iPhone/;  
+      var strAndroid = /Android/;  
+      var reg = new RegExp(device_type);
+      //如果字符串中不包含目标字符会返回
+      if(strIos.test(device_type)){
+      //匹配成功do something
+        console.log('iPhone');
+      } else if (strAndroid.test(device_type)) {
+        console.log('Android');
+      } else {
+        console.log('ipad');
+      }
+    };
+
+  </script>
 </body>
 </html>

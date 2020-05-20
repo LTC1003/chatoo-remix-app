@@ -12,12 +12,26 @@
 .title{
   /* font-size:60px; */
   font-size: 3rem;
-  padding:8px 0;
+  width: fit-content;
+  padding:8px 20PX;
+  font-style: italic;
+  /* background-image: linear-gradient(-54deg, #ED25FB, #D95190, #03D107);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  /* text-align: center; */
+  margin: 0 auto;
+
 }
 .title-docs{
   /* font-size:32px; */
   font-size: 1.6rem;
-  padding:8px 0;
+  font-style: italic;
+  width: fit-content;
+  padding:8px 20px;
+  /* background-image: linear-gradient(-16deg, #ED25FB, #D95190, #3aD498);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  margin: 0 auto;
 }
 .rwcode{
   margin-top: 40px;
@@ -47,6 +61,7 @@
   flex-wrap: nowrap;
   align-items: center; 
   justify-content: center;
+  margin-top: 2rem;
 }
 .code-text span{
   margin-right: 0.25rem;
@@ -79,6 +94,28 @@
   height: 100%;
 }
 
+/**new version **/
+.app-avater, .devifdown{
+  display: none;
+}
+.app-avater {
+  margin: 0 auto;
+  width: 8rem;
+  height: 8rem;
+}
+.app-avater img{
+  height: 100%;
+  width: 100%;
+}
+.devifdown {
+  padding: 10px 20px;
+  border: transparent;
+  background: #fff;
+  border-radius: 20px;
+  margin: 40px auto;
+}
+/** new version **/
+
 /* 物理设备尺寸大到小 */
 
 /* 13 寸 */
@@ -96,7 +133,7 @@
     font-size: 20px;
   }
   .content-warp{
-    background: url("../public/imgs/devbg-phone.png") no-repeat;
+    background: url("../public/imgs/phonepagebg.png") no-repeat;
     background-size: 100% 100%;
     min-height: 1286px;
   }
@@ -107,6 +144,12 @@
   .downbox{
     color: #f5f8f9;
     margin-bottom: 40px;
+  }
+  .phoneImg, .rwcode{
+    display: none;
+  }
+  .app-avater, .devifdown{
+    display: block;
   }
 }
 
@@ -134,15 +177,15 @@
     background-size: cover;
     min-height: 736px;
   }
-  .content-warp{
+  /* .content-warp{
     align-items: flex-start;
-  }
+  } */
   .downbox{
-    width: 80%;
+    width: 90%;
   }
-  .phoneImg{
+  /* .phoneImg{
     width: 60%;
-  }
+  } */
 
 }
 /* dev-min-width 320px */
@@ -153,15 +196,9 @@
   .content-warp{
     background-size: cover;
   }
-  .content-warp{
+  /* .content-warp{
     align-items: flex-start;
-  }
-  .downbox{
-    width: 80%;
-  }
-  .phoneImg{
-    width: 60%;
-  }
+  } */
   .rwcode{
     flex-direction: column;
   }
