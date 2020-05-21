@@ -16,6 +16,9 @@
       <div class="applog">
         <!-- <img src="./public/imgs/applog.png" alt=""> -->
       </div>
+      <div class="menu">
+        <div style="font-size: 2rem;" onclick="listnerMenu('block')">三</div>
+      </div>
       <ul class="pagelist">
         <li class="active">
           <a href="javascript:;">首页</a>
@@ -95,12 +98,13 @@
       <div class="item-col"><p>Copyright © 江苏精易达信息技术</p> <p>All Rights Reserved</p></div>
     </footer>
   </div>
+  <script src="index.js"></script>
   <script>
     function querySystem(){
       var device_type = navigator.userAgent;
       // var device_version = navigator.appVersion ;
       // var platform = navigator.platform;
-      console.log(1111111111111, device_type);
+      // console.log(1111111111111, device_type);
       //正则表达式
       var strIos = /iPhone/;  
       var strAndroid = /Android/;  
@@ -109,13 +113,16 @@
       if(strIos.test(device_type)){
       //匹配成功do something
         console.log('iPhone');
+        window.open("https://apps.apple.com/cn/app/%E8%A7%86%E7%94%9F%E6%B4%BB/id1435426090", "_self");
       } else if (strAndroid.test(device_type)) {
         console.log('Android');
+        window.open("http://d.7short.com/5wck", "_self");
       } else {
         console.log('ipad');
+        window.open('https://apps.apple.com/cn/app/%E8%A7%86%E7%94%9F%E6%B4%BB/id1435426090', "_parent");
       }
     };
-
+    
   </script>
 </body>
 </html>

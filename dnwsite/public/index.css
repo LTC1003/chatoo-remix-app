@@ -114,6 +114,10 @@
   border-radius: 20px;
   margin: 40px auto;
 }
+.menu{
+  display: none;
+}
+
 /** new version **/
 
 /* 物理设备尺寸大到小 */
@@ -166,7 +170,26 @@
     font-size: 12px;
     padding: 2px 10px;
   }
-
+  .menu{
+    display: block;
+  }
+  .pagelist{
+    display: none;
+    position: absolute;
+    top: 4rem;
+    z-index: 999;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    border-top: 1px solid #c3c3c3;
+  }
+  .pagelist li{
+    padding-left: 20px;
+  }
+  .pagelist li>a {
+    display: inline-block;
+    width: 100%;
+  }
 }
 /* phone-width-max: 414px */
 @media screen and (max-width: 500px){

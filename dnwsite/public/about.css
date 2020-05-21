@@ -57,6 +57,9 @@
 .contact .docs{
   color: #666666;
 }
+.menu{
+  display: none;
+}
 
 /* 物理设备尺寸大到小 */
 
@@ -90,6 +93,27 @@
     background: url("../public/imgs/devbg-phone.png") no-repeat;
     background-size: 100% 100%;
     min-height: 768px;
+  }
+
+  .menu{
+    display: block;
+  }
+  .pagelist{
+    display: none;
+    position: absolute;
+    top: 4rem;
+    z-index: 999;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    border-top: 1px solid #c3c3c3;
+  }
+  .pagelist li{
+    padding-left: 20px;
+  }
+  .pagelist li>a {
+    display: inline-block;
+    width: 100%;
   }
 }
 /* phone-width-max: 414px */
